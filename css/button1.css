@@ -1,10 +1,10 @@
 .container{
     background-color: azure;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
     gap: 10px;
+    padding-top: 50px;
 }
 .button-1 {
     height: 50px;
@@ -19,7 +19,7 @@
     transition: ease-in;
 
 }
-.button:hover {
+.button-1:hover {
     background: #11009E;
     box-shadow: 0 5px 5px #8696FE;
 }
@@ -30,6 +30,7 @@
 
 .button-2 {
     width: 200px;
+    height: 50px;
     display: flex;
     justify-content : space-around;
     align-items: center;
@@ -57,4 +58,31 @@
 .button-2:hover {
     background-color: #116E92;
     box-shadow: 0 3px 2px #0092A9;
+}
+
+.button-holder {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 400px;
+}
+
+.button-3 {
+    background-color: #A7233A;
+    border: none;
+    outline: none;
+    color: #FBAE3C;
+    height: 60px;
+    width: 180px;
+    border-radius: 30px;
+    font-size: 20px;
+    transition: 100ms;
+    margin-left: 30px;
+}
+
+
+.button-3:hover {
+    height: 120px;
+    width: 120px;
+    border-radius: 60px;
 }
