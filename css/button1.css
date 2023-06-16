@@ -2,10 +2,20 @@
     background-color: azure;
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 10px;
     padding-top: 50px;
 }
+
+.button-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    border: 1px brown solid ;
+}
+
 .button-1 {
     height: 50px;
     width: 250px;
@@ -60,12 +70,6 @@
     box-shadow: 0 3px 2px #0092A9;
 }
 
-.button-holder {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    height: 400px;
-}
 
 .button-3 {
     background-color: #A7233A;
@@ -77,7 +81,6 @@
     border-radius: 30px;
     font-size: 20px;
     transition: 100ms;
-    margin-left: 30px;
 }
 
 
