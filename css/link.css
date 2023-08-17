@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    gap: 10px;
+    padding: 30px 40px 30px 40px;
+    font-family: "Arial Black", sans-serif;
+}
+.link-1 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #9F0D7F;
+    position: relative;
+}
+.link-1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom:0;
+    height: 2px;
+    width: 100%;
+    background: #241468;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in;
+}
+
+.link-1:hover::after {
+    transform: scaleX(1);
+}
